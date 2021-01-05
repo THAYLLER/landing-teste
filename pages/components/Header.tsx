@@ -69,14 +69,30 @@ const MenuLinks = ({ isOpen }) => {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="!#">Início</MenuItem>
-        <MenuItem to="!#">Institucional</MenuItem>
-        <MenuItem to="!#">Soluções</MenuItem>
-        <MenuItem to="!#">Relaçao com Investidores</MenuItem>
-        <MenuItem to="!#">Notícias e Eventos</MenuItem>
-        <MenuItem to="!#">Juse-se ao Time</MenuItem>
-        <MenuItem to="!#">Login</MenuItem>
-        <MenuItem to="!#">Abra sua Conta</MenuItem>
+        <MenuItem to="!#" isLast>
+          Início
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Institucional
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Soluções
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Relaçao com Investidores
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Notícias e Eventos
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Juse-se ao Time
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Login
+        </MenuItem>
+        <MenuItem to="!#" isLast>
+          Abra sua Conta
+        </MenuItem>
       </Stack>
     </Box>
   )
