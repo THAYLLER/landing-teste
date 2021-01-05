@@ -16,7 +16,8 @@ const Home: React.FC = () => {
             backgroundImage="url('assets/imgs/banners/banner_1.png')"
             backgroundPosition="center"
             backgroundRepeat="unset"
-            width="100%"
+            backgroundSize="cover"
+            width="100vh"
             height="666px"
           >
             <Header />

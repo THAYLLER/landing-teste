@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Box, Flex, Text, Stack } from '@chakra-ui/react'
+import { Link, Box, Flex, Text, Stack, Img } from '@chakra-ui/react'
 
 import Logo from './Logo'
 
@@ -21,25 +21,17 @@ const NavBar = props => {
 }
 
 const CloseIcon = () => (
-  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+  <>
     <title>Close</title>
-    <path
-      fill="white"
-      d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
-    />
-  </svg>
+    <Img src="assets/imgs/close.png" alt="" w="36px" h="36px" />
+  </>
 )
 
 const MenuIcon = () => (
-  <svg
-    width="24px"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="white"
-  >
+  <>
     <title>Menu</title>
-    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-  </svg>
+    <Img src="assets/imgs/bars.png" alt="bars" w="40px" h="40px" />
+  </>
 )
 
 const MenuToggle = ({ toggle, isOpen }) => {
@@ -65,6 +57,7 @@ const MenuLinks = ({ isOpen }) => {
     <Box
       display={{ base: isOpen ? 'block' : 'none', md: 'block' }}
       flexBasis={{ base: '100%', md: 'auto' }}
+      bg={['#36264D', 'transparent', 'transparent', 'transparent']}
     >
       <Stack
         spacing={8}
@@ -94,10 +87,9 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="auto"
-      marginTop={['32px', '0']}
+      marginTop="32px"
       marginStart="24px"
       marginEnd="30px"
-      bg={['#36264D', 'transparent', 'transparent', 'transparent']}
       color={['white', 'white', 'primary.700', 'primary.700']}
       {...props}
     >
