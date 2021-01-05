@@ -3,7 +3,7 @@ import { Box, Text, Img } from '@chakra-ui/react'
 
 const Logo: React.FC = props => {
   return (
-    <Box {...props} marginRight="30px">
+    <Box {...props} marginRight="30px" w="100px">
       <Img src="assets/imgs/logo.png" w="124px" h="28px" />
     </Box>
   )

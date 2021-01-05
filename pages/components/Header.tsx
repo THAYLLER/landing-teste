@@ -3,17 +3,20 @@ import { Link, Box, Flex, Text, Stack, Img } from '@chakra-ui/react'
 
 import Logo from './Logo'
 
-const NavBar = props => {
+const NavBar = (props): JSX.Element => {
   const [isOpen, setIsOpen] = React.useState(false)
 
   const toggle = () => setIsOpen(!isOpen)
 
   return (
     <NavBarContainer {...props}>
-      <Logo
+      <Box
+        marginRight="30px"
         w="100px"
         color={['white', 'white', 'primary.500', 'primary.500']}
-      />
+      >
+        <Img src="assets/imgs/logo.png" w="124px" h="28px" />
+      </Box>
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
